@@ -3,8 +3,6 @@
 
 ### HTTP/HTTPS Modules
 This pulls in status code then html from page.
-Test in console with
-babel-node server.js | less
 ```
 import https from 'https'
 
@@ -16,5 +14,8 @@ https.request(...)
       console.log(chunk.toString())
     })
   })
-
+```
+Test in console with
+```
+babel-node server.js | less
 ```
